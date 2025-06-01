@@ -37,6 +37,7 @@ services:
   searxng:
     container_name: searxng
     image: docker.io/searxng/searxng:latest
+    user: root
     restart: unless-stopped
     networks:
       - searxng
